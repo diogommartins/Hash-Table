@@ -11,22 +11,23 @@
 TabelaHash::TabelaHash(int tamanhoTabela)
 {
     tamanho = tamanhoTabela;
-    vetor = new lista();
+    vetor = new lista[tamanho];
 }
 
 TabelaHash::~TabelaHash()
 {
-    delete vetor;
+    delete [] vetor;
 }
 
 int TabelaHash::hash(int itemChave)
 {
-    return itemChave % 23;
+    return itemChave % tamanho;
 }
 
 void TabelaHash::inserirItem(int chave)
 {
     int index = hash(chave);
+    auto v = vetor[index];
 
     if(!vetor[index].busca(chave))
         vetor[index].insere(chave);
@@ -34,9 +35,10 @@ void TabelaHash::inserirItem(int chave)
         cout << "Chave já inserida";
 }
 
-bool removerItem(int chave)
+bool TabelaHash::removerItem(int chave)
 {
-    return true;
+    int index = hash(chave);
+    return vetor[index].remove(chave);
 }
 
 bool TabelaHash::buscarItemPorChave(int chave)
