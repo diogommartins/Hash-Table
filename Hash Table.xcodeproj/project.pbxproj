@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		66A6A1BF1BF916440068087A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66A6A1BE1BF916440068087A /* main.cpp */; };
+		66A6A1C71BF916740068087A /* tabelahash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66A6A1C51BF916740068087A /* tabelahash.cpp */; settings = {ASSET_TAGS = (); }; };
+		66A6A1CA1BF916DD0068087A /* lista.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66A6A1C81BF916DD0068087A /* lista.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		66A6A1BB1BF916440068087A /* Hash Table */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Hash Table"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A6A1BE1BF916440068087A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		66A6A1C51BF916740068087A /* tabelahash.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tabelahash.cpp; sourceTree = "<group>"; };
+		66A6A1C61BF916740068087A /* tabelahash.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tabelahash.hpp; sourceTree = "<group>"; };
+		66A6A1C81BF916DD0068087A /* lista.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lista.cpp; sourceTree = "<group>"; };
+		66A6A1C91BF916DD0068087A /* lista.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lista.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				66A6A1BE1BF916440068087A /* main.cpp */,
+				66A6A1C51BF916740068087A /* tabelahash.cpp */,
+				66A6A1C61BF916740068087A /* tabelahash.hpp */,
+				66A6A1C81BF916DD0068087A /* lista.cpp */,
+				66A6A1C91BF916DD0068087A /* lista.hpp */,
 			);
 			path = "Hash Table";
 			sourceTree = "<group>";
@@ -118,7 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66A6A1C71BF916740068087A /* tabelahash.cpp in Sources */,
 				66A6A1BF1BF916440068087A /* main.cpp in Sources */,
+				66A6A1CA1BF916DD0068087A /* lista.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
