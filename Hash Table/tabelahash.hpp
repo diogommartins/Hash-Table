@@ -9,20 +9,20 @@
 #ifndef tabelahash_hpp
 #define tabelahash_hpp
 
-#include "lista.h"
+#include "lista.hpp"
 
 class TabelaHash
 {
 private:
     lista * vetor;
     int tamanho;
-    int hash( int itemChave );
+    int hash(int itemChave);
 
 public:
     TabelaHash(int tamanhoTabela = 13);
     void inserirItem(int chave);
     bool removerItem(int chave);
-    bool buscarItemPorChave(int Chave);
+    bool buscarItemPorChave(int chave);
     void imprimirTabela();
     void imprimirItens();
     int retornarTamanho();

@@ -7,9 +7,16 @@
 //
 
 #include <iostream>
+#include "tabelahash.hpp"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    auto table = TabelaHash();
+
+    table.inserirItem(1);
+    table.inserirItem(10);
+    table.inserirItem(55);
+    table.inserirItem(1234);
+    table.inserirItem(145);
+
     return 0;
 }
