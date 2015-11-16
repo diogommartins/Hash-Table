@@ -27,7 +27,6 @@ int TabelaHash::hash(int itemChave)
 void TabelaHash::inserirItem(int chave)
 {
     int index = hash(chave);
-    auto v = vetor[index];
 
     if(!vetor[index].busca(chave))
         vetor[index].insere(chave);
@@ -49,7 +48,7 @@ bool TabelaHash::buscarItemPorChave(int chave)
 
 void TabelaHash::imprimirTabela()
 {
-    cout << "\n Tabela de" << tamanho << "elementos";
+    cout << "\n Tabela de " << tamanho << " elementos";
     for(int i=0; i < tamanho; i++)
     {
         cout << "\n Compartimento " << i << ": ";
